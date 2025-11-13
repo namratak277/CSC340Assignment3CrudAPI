@@ -36,8 +36,12 @@ public class catService {
         }).orElse(null);
     }
     
-    public void deleteCat(Long catId) {
-        catRepository.deleteById(catId);
+    public boolean deleteCat(Long catId) {
+        if (catRepository.existsById(catId)) {
+            catRepository.deleteById(catId);
+            return true;
+        }
+        return false;
     }
   
     public List<cat> searchCatsByName(String name) {

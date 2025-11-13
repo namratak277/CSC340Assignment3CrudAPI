@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Animal Form</title>
+    <link rel="stylesheet" href="CSS/new-animal.css">
+</head>
+
+<body>
+<h1>Welcome to Namrata's Cat Adoption Center</h1>
+
+<nav>
+    <div class="Links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="details.html">Details</a>
+    <a href="new-animal-form.html" id="now">Add New Cat</a>
+    </div>
+    
+    <div class="search"> 
+    <input type="text" placeholder="Search for cats...">
+    <button onclick="location.href='new-animal-form.html'">Add New Cat</button>
+    </div>
+</nav>
+
+<h2>Add a New Cat</h2>
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="type">Type:</label><br>
+    <input type="text" id="type" name="type" required><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="species">Species:</label><br>
+    <input type="text" id="species" name="species" required><br>
+
+    <label for="details">Details:</label><br>
+    <textarea id="details" name="details" rows="5" cols="50" required></textarea><br>
+
+    <input type="submit" value="Add Cat">
+
+</body>
+</html>
