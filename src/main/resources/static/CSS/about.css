@@ -1,4 +1,5 @@
-h1{
+/* Shared styles matching index.css */
+h1 {
     text-align: center;
     color: #186F65;
     background-color: #B5CB99;
@@ -6,45 +7,70 @@ h1{
     padding: 15px;
 }
 
-h2{
-    color: #186F65;
-}
-
-body{
+body {
     background-color: #FCE09B;
+    margin: 0;
+    padding: 0;
 }
 
-div{
-    text-align: center;
-    margin: 20px;
-    align-items: center;
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-nav .Links, nav .links a {
-  display: flex;
-  gap: 30px; 
-  justify-content: center;
-  flex: 1;
-  font-weight: bold;
-}
-
-a{
-    text-decoration: none;
-    color: #B2533E;
-}
-
-#now{
-    text-decoration: underline;
-}
-
-.about.us{
+/* Navigation - same as index.css */
+nav {
     background-color: #B5CB99;
-    color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #186F65;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #E89F87;
+    color: white;
+}
+
+nav a.active {
+    background-color: #186F65;
+    color: white;
+}
+
+/* About section */
+.about-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
 }
 
-p{
-    color: #194f49
+.about-section h2 {
+    color: #186F65;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.about-section img {
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.about-section p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
 }

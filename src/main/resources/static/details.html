@@ -6,29 +6,23 @@
 </head>
 
 <body>
-<h1>Welcome to Namrata's Cat Adoption Center</h1>
+<main>
+    <h1>Namrata's Cat Adoption Center</h1>
 
-<nav>
-    <div class="Links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="details.html" id="now">Details</a>
-    <a href="new-animal-form.html">Add New Cat</a>
-    </div>
-    
-    <div class="search"> 
-    <input type="text" placeholder="Search for cats...">
-    <button onclick="location.href='new-animal-form.html'">Add New Cat</button>
-    </div>
-</nav>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/new-animal-form.html">Add New Cat</a>
+    </nav>
 
-<div class="cat info">
-            <img id="detailImage" src="Images/cat1.webp" alt="Cat">
-            <h2 id="detailName">Loading...</h2>
-            <p>Age: <span id="detailAge"></span></p>
-            <p>Breed: <span id="detailBreed"></span></p>
-            <p>Details: <span id="detailDescription"></span></p>
-        </div>
+    <section class="cat-detail">
+        <img id="detailImage" src="Images/cat1.webp" alt="Cat">
+        <h2 id="detailName">Loading...</h2>
+        <p>Age: <span id="detailAge"></span></p>
+        <p>Breed: <span id="detailBreed"></span></p>
+        <p>Details: <span id="detailDescription"></span></p>
+    </section>
+</main>
 
 <script src="/app.js"></script>
 </body>

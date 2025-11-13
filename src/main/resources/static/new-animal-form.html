@@ -6,24 +6,18 @@
 </head>
 
 <body>
-<h1>Welcome to Namrata's Cat Adoption Center</h1>
+<main>
+    <h1>Namrata's Cat Adoption Center</h1>
 
-<nav>
-    <div class="Links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="details.html">Details</a>
-    <a href="new-animal-form.html" id="now">Add New Cat</a>
-    </div>
-    
-    <div class="search"> 
-    <input type="text" placeholder="Search for cats...">
-    <button onclick="location.href='new-animal-form.html'">Add New Cat</button>
-    </div>
-</nav>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/new-animal-form.html" class="active">Add New Cat</a>
+    </nav>
 
-<h2>Add a New Cat</h2>
-<form id="catForm">
+    <section class="form-section">
+        <h2>Add a New Cat</h2>
+        <form id="catForm">
     <input type="hidden" id="catId">
 
     <label for="name">Name:</label><br>
@@ -43,9 +37,10 @@
 
     <button type="submit">Add Cat</button>
     <button type="button" id="btnCancel">Cancel</button>
-</form>
+        </form>
+    </section>
+</main>
 
-<script src="app.js"></script>
-
+<script src="/app.js"></script>
 </body>
 </html>
