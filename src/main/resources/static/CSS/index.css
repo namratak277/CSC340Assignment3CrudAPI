@@ -1,0 +1,382 @@
+h1{
+    text-align: center;
+    color: #186F65;
+    background-color: #B5CB99;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+body{
+    background-color: #FCE09B;
+}
+
+nav .Links, nav .links a {
+  display: flex;
+  gap: 30px; 
+  justify-content: center;
+  flex: 1;
+  font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #B2533E;
+}
+
+#now{
+    text-decoration: underline;
+}
+
+.cat.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cat.info{
+    background-color: #B5CB99;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(28, 69, 27, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.cat.info img {
+    width: 250px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* ===== MODULAR STYLES FOR INDEX PAGE ===== */
+
+/* Main container */
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #B5CB99;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #186F65;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #E89F87;
+    color: white;
+}
+
+/* Controls section */
+#controls {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#controls input {
+    padding: 10px 15px;
+    border: 2px solid #B5CB99;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 180px;
+    transition: border-color 0.3s ease;
+}
+
+#controls input:focus {
+    outline: none;
+    border-color: #186F65;
+}
+
+#controls button {
+    padding: 10px 20px;
+    background-color: #186F65;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#controls button:hover {
+    background-color: #4A7C74;
+    transform: translateY(-2px);
+}
+
+#controls button:active {
+    transform: translateY(0);
+}
+
+/* List section */
+#list {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#list h2 {
+    color: #186F65;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Table styling */
+#catsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#catsTable thead {
+    background-color: #186F65;
+    color: white;
+}
+
+#catsTable th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#catsTable tbody tr {
+    border-bottom: 1px solid #D6CFC1;
+    transition: background-color 0.2s ease;
+}
+
+#catsTable tbody tr:hover {
+    background-color: #FCE09B;
+}
+
+#catsTable td {
+    padding: 12px 15px;
+    color: #333;
+}
+
+#catsTable td:first-child {
+    font-weight: bold;
+    color: #186F65;
+}
+
+/* Action buttons in table */
+#catsTable .edit-link,
+#catsTable .view,
+#catsTable .delete {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-right: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#catsTable .view {
+    background-color: #4A7C74;
+    color: white;
+}
+
+#catsTable .view:hover {
+    background-color: #186F65;
+}
+
+#catsTable .edit-link {
+    background-color: #B5CB99;
+    color: #186F65;
+}
+
+#catsTable .edit-link:hover {
+    background-color: #186F65;
+    color: white;
+}
+
+#catsTable .delete {
+    background-color: #B2533E;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#catsTable .delete:hover {
+    background-color: #8B3E2F;
+}
+
+/* Cat Grid/Card Layout */
+#catGrid.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.cat-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #186F65;
+}
+
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-color: #B2533E;
+}
+
+.cat-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.cat-card-content {
+    padding: 20px;
+}
+
+.cat-card h3 {
+    color: #186F65;
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.cat-card .cat-breed {
+    color: #4A7C74;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.cat-card .cat-age,
+.cat-card .cat-color {
+    color: #666;
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.cat-card .cat-description {
+    color: #333;
+    font-size: 14px;
+    margin: 12px 0;
+    line-height: 1.5;
+    min-height: 40px;
+}
+
+.cat-card .cat-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.cat-card .btn-view,
+.cat-card .btn-edit,
+.cat-card .btn-delete {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cat-card .btn-view {
+    background-color: #4A7C74;
+    color: white;
+}
+
+.cat-card .btn-view:hover {
+    background-color: #186F65;
+}
+
+.cat-card .btn-edit {
+    background-color: #B5CB99;
+    color: #186F65;
+}
+
+.cat-card .btn-edit:hover {
+    background-color: #186F65;
+    color: white;
+}
+
+.cat-card .btn-delete {
+    background-color: #B2533E;
+    color: white;
+}
+
+.cat-card .btn-delete:hover {
+    background-color: #8B3E2F;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #controls {
+        flex-direction: column;
+    }
+    
+    #controls input,
+    #controls button {
+        width: 100%;
+    }
+    
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    #catsTable {
+        font-size: 12px;
+    }
+    
+    #catsTable th,
+    #catsTable td {
+        padding: 8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

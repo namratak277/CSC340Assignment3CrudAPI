@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Color Palette
+    #186F65
+    #B5CB99
+    #FCE09B
+    #B2533E
+    #4A7C74
+    #E89F87
+    #D6CFC1
+-->
+<head>
+    <title>Namrata's Cat Adoption Center</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+<main>
+    <h1>Namrata's Cat Adoption Center</h1>
+
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/new-animal-form.html">Add New Cat</a>
+    </nav>
+
+    <section id="controls">
+        <input id="searchName" placeholder="Search by name...">
+        <button id="btnSearch">Search</button>
+        <input id="filterBreed" placeholder="Filter by breed...">
+        <button id="btnFilterBreed">Filter</button>
+        <input id="filterColor" placeholder="Filter by color...">
+        <button id="btnFilterColor">Filter</button>
+        <button id="btnRefresh">Refresh</button>
+    </section>
+
+    <!-- Create/Edit moved to new-animal-form.html -->
+
+    <section id="list">
+      <h2>All Cats</h2>
+      <div id="catGrid" class="cat-grid"></div>
+    </section>
+
+</main>
+
+<script src="/app.js"></script>
+
+</body>
+</html>

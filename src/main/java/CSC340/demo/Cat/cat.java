@@ -1,12 +1,13 @@
 package CSC340.demo.Cat; //locates this class and groups it with the other classes
 
 //imports necessary info for the class to run
-import jakarta.persistence.Column; 
-import jakarta.persistence.Entity; 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue; 
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 
 //JPA entity, maps to table cat
 @Entity
@@ -17,9 +18,11 @@ public class cat {
     private Long animalId;  //unique ID for each cat
 
     @Column(nullable = false)
+    @NotBlank
     private String name;
 
     @Column(nullable = false)
+    @NotBlank
     private String description;
 
     private String breed;
